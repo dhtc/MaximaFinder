@@ -1,3 +1,4 @@
+# python setup.py build_ext --inplace
 from setuptools import setup
 import numpy
 from distutils.extension import Extension
