@@ -15,10 +15,6 @@ setup(name='findmaxima2d',
       install_requires=[
           'cython','scipy','numpy'
       ],
-
-      
-      
-      
       include_dirs=[numpy.get_include()],
       include_package_data=True,
       ext_modules =  cythonize(["findmaxima2d/is_within.pyx","findmaxima2d/cfindmaxima2d.pyx"]),

@@ -42,9 +42,6 @@ def find_maxima(img_data, local_max, ntol):
 	
 	"""
 	assert(img_data.shape != 2), "Your input image is the wrong dimension, it should 2-D."
-
-	if np.max(img_data) >255 or np.min(img_data)<0:
-		print ('warning: your image should be scaled between 0 and 255 (8-bit).')
 	
 	img_data = np.array(img_data).astype(np.float64)
 	local_max = local_max.astype(np.uint8)
